@@ -1,5 +1,5 @@
 #import "GooglePlacesPickerPlugin.h"
-@import GoogleMaps;
+//SEB @import GoogleMaps;
 @import GooglePlaces;
 
 @implementation GooglePlacesPickerPlugin
@@ -44,7 +44,7 @@ NSDictionary *filterTypes;
         _result(fError);
     }
     [GMSPlacesClient provideAPIKey:apiKey];
-    [GMSServices provideAPIKey:apiKey];
+    //SEB [GMSServices provideAPIKey:apiKey];
     _result(nil);
 }
 
